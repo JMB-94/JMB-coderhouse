@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---HEADER--- */
+/* -----Logo + title----- */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.header__intro {
+  display: flex;
+  width: 400px;
+}
+
+.header__logo {
+  height: 120px;
+  width: auto;
+  padding: 0rem;
+}
+
+.header__title {
+  align-self: center;
+  font-size: 2rem;
+  font-variant: small-caps;
+  font-style: normal;
+  font-family: 'Arbutus Slab';
+  text-transform: uppercase capitalize;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ---Navbar--- */
+
+.header__navbar ul {
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.header__navbar li {
+  float: left;
+  margin: 1rem;
+}
+
+.header__navbar a {
+  padding: 0.2rem;
+  border: solid;
+  font-size: 1.2rem;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-variant: small-caps;
+  font-style: normal;
+  font-family: 'Arbutus Slab';
+  text-transform: uppercase capitalize;
+  font-weight: 500;
+  background-color: rgba(146, 106, 168, 0.418);
+  border-color: rgba(124, 99, 148, 0.473);
+  color: rgb(30, 12, 78);
+  clear: both;
+}
+
+/* -----Placeholder ref----- */
+.header__ref {
+  display: none;
+}
+
+/* -----MAIN----- */
+/* ---Banner introductorio--- */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 1.6rem;
+  padding: 1rem 0rem 0rem 1rem;
+  background-image: url('../assets/banner-light-purple.jpeg');
+  background-color: rgb(192, 166, 216);
+  background-size: cover;
+}
+
+.banner__title {
+  font-family: 'Arbutus Slab';
+  color: rgb(91, 50, 204);
+  margin-bottom: 0.7px;
+  letter-spacing: 0.7px;
+}
+
+.banner__text {
+  font-family: 'Abril Slab';
+  width: 500px;
+  text-align: justify;
+  letter-spacing: 0.4px;
+}
+
+.banner__img {
+  margin: 5rem;
+  padding: 2rem 0rem 0rem 2rem;
+  max-width: 100%;
+}
+
+/* -----Video----- */
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.video__text {
+  position: inherit;
+  width: 600px;
+  font-family: 'Abril Slab';
+  width: 500px;
+  text-align: justify;
+  letter-spacing: 0.4px;
+  padding: 1rem;
+}
+
+/* ---FOOTER--- */
+.footer {
+  background-color: rgba(201, 158, 250, 0.212);
+  padding: 1rem;
+}
+
+/* -----Placeholder ref----- */
+.footer a {
+  display: none;
+}

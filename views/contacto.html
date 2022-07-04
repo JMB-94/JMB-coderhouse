@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="../assets/eye.png" />
+    <link rel="stylesheet" href="../estilos-css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus+Slab&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="arriba" class="header">
+      <section class="header__intro">
+        <img
+          src="../assets/custom-logo.jpg"
+          alt="Dr. Cosme Fulanito"
+          class="header__logo"
+        />
+        <h1 class="header__title">Oftalmología Fulanito</h1>
+      </section>
+      <!-- Nav replicado en views secundarias -->
+      <nav class="header__navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../views/oftalmologia.html">Oftalmología</a></li>
+          <li><a href="../views/noticias.html">Noticias</a></li>
+          <li><a href="../views/contacto.html">Contacto</a></li>
+          <li><a href="../views/ubicacion.html">Ubicación</a></li>
+        </ul>
+      </nav>
+      <p class="header__ref">
+        <a href="#abajo">Ir abajo</a>
+      </p>
+    </header>
+    <main>
+      <h2>Formulario</h2>
+      <!--  Fomulario input -->
+      <form action="">
+        <fieldset>
+          <legend>¿Cómo lo contactamos?</legend>
+          <label for="nombre"> Nombre </label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Ingrese su nombre"
+            required
+          />
+
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Ingrese su nro. de teléfono"
+            required
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ingrese su e-mail"
+            required
+          />
+
+          <!-- Menú desplegable -->
+          <label for="tipo-de-consulta">Tipo de consulta </label>
+          <select name="tipo-de-consulta" id="tipo-de-consulta">
+            <option value="estrabismo">Estrabismo</option>
+            <option value="glaucoma">Glaucoma</option>
+            <option value="ojo-seco">Ojo seco</option>
+            <option value="refraccion">Refracción</option>
+            <option value="retina">Retina</option>
+          </select>
+
+          <!-- Input type radio -->
+          <label for="radio"> ¿Posee obra social?</label>
+          <input type="radio" name="radio" id="radio" />Si
+          <input type="radio" name="radio" id="radio" />No
+
+          <!-- Input type checkbox -->
+          <label for="checkbox">¿Desea recibir noticias nuestras?</label>
+          <input type="checkbox" />
+
+          <!-- Textarea -->
+          <legend>Comentarios</legend>
+          <textarea name="" rows="5" cols="33"></textarea>
+
+          <!-- Botones -->
+          <button type="reset">Eliminar</button>
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer id="abajo" class="footer">
+      <p class="footer_ref">
+        <a href="#arriba">Ir Arriba</a>
+      </p>
+      <p>
+        Copyright 2022 Cosme Fulanito | Médico oftalmólogo. Todos los derechos
+        registrados. Diseño Web por Juan Manuel Blazquez.
+      </p>
+    </footer>
+  </body>
+</html>
