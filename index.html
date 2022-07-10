@@ -13,31 +13,53 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus+Slab&family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
-    <header id="arriba" class="header">
-      <section class="header__intro">
-        <img
-          src="./assets/custom-logo.jpg"
-          alt="Dr. Cosme Fulanito"
-          class="header__logo"
-        />
-        <h1 class="header__title">Oftalmología Fulanito</h1>
-      </section>
+    <body>
+      <header id="arriba" class="header">
+        <section class="header__intro">
+          <img
+            src="../assets/custom-logo.jpg"
+            alt="Dr. Cosme Fulanito"
+            class="header__logo"
+          />
+          <h1 class="header__title">Oftalmología Fulanito</h1>
+        </section>
       <!-- Nav replicado en views secundarias -->
-      <nav class="header__navbar">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./views/oftalmologia.html">Oftalmología</a></li>
-          <li><a href="./views/noticias.html">Noticias</a></li>
-          <li><a href="./views/contacto.html">Contacto</a></li>
-          <li><a href="./views/ubicacion.html">Ubicación</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="header__navbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/oftalmologia.html">Oftalmología</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/ubicacion.html">Ubicación</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <p class="header__ref">
         <a href="#abajo">Ir abajo</a>
       </p>
+    </section>
     </header>
 
     <main>
@@ -61,18 +83,13 @@
       </section>
 
       <!-- Video presentación -->
+      
+      <section class="consultorio">
+        <img src="./assets/oftalmología.jpg" alt="foto-consultorio">
 
-      <section class="video">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/xnoummdS3DA"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <p class="video__text">
+        <div class="consultorio__info">
+      <h2 class="consultorio__title">INFO SOBRE LA FOTO</h2>
+        <p class="consultorio__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
           maiores cumque eveniet inventore libero quasi, nesciunt similique,
           autem obcaecati quos modi aut repellendus, hic dolores provident
@@ -81,7 +98,8 @@
           perspiciatis deserunt dolor omnis exercitationem architecto alias
           minus ipsam temporibus atque illum magni id ad aliquid eveniet sequi.
         </p>
-      </section>
+        </div>
+    </section>
 
     </main>
      <!-- Footer replicado en vistas secundarias -->

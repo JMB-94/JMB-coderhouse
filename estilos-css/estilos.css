@@ -1,7 +1,35 @@
+*::after,
+*::before,
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root{
+/* Font-Family */
+--font-titles: 'Arbutus Slab';
+--font-main: 'Abril Slab';
+
+/* Font Sizes */
+--text-xsmall: 0.8em;
+--text-small: 1em;
+--text-medium: 1.5em;
+--text-large: 2em;
+
+}
+
+html, body {
+  font-family: var(--font-main);
+  height: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-titles);
+}
+
+img {
+  width:100%
 }
 
 /* ---HEADER--- */
@@ -13,6 +41,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+  
 }
 
 .header__intro {
@@ -28,10 +57,9 @@
 
 .header__title {
   align-self: center;
-  font-size: 2rem;
+  font-size: var(--text-large);
   font-variant: small-caps;
   font-style: normal;
-  font-family: 'Arbutus Slab';
   text-transform: uppercase capitalize;
   font-weight: 500;
   text-align: center;
@@ -52,14 +80,14 @@
 }
 
 .header__navbar a {
-  padding: 0.2rem;
+  padding: 0.2em;
   border: solid;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   text-decoration: none;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
   font-variant: small-caps;
   font-style: normal;
-  font-family: 'Arbutus Slab';
+  font-family: var(--font-titles);
   text-transform: uppercase capitalize;
   font-weight: 500;
   background-color: rgba(146, 106, 168, 0.418);
@@ -73,30 +101,28 @@
   display: none;
 }
 
-/* -----MAIN----- */
+/* -----INDEX-main----- */
 /* ---Banner introductorio--- */
 
 .banner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  line-height: 1.6rem;
-  padding: 1rem 0rem 0rem 1rem;
+  line-height: 1.6em;
+  padding: 0rem 1rem;
   background-image: url('../assets/banner-light-purple.jpeg');
   background-color: rgb(192, 166, 216);
   background-size: cover;
 }
 
 .banner__title {
-  font-family: 'Arbutus Slab';
   color: rgb(91, 50, 204);
   margin-bottom: 0.7px;
   letter-spacing: 0.7px;
 }
 
 .banner__text {
-  font-family: 'Abril Slab';
   width: 500px;
   text-align: justify;
   letter-spacing: 0.4px;
@@ -108,29 +134,67 @@
   max-width: 100%;
 }
 
-/* -----Video----- */
+/* -----FOTO CONSULTORIO----- */
 
-.video {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 2rem;
+.consultorio{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2, 1fr;
 }
 
-.video__text {
-  position: inherit;
-  width: 600px;
-  font-family: 'Abril Slab';
-  width: 500px;
-  text-align: justify;
-  letter-spacing: 0.4px;
+.consultorio img{
+  grid-column: 1/4;
   padding: 1rem;
+}
+
+.consultorio__info{
+  grid-column: 1/4;
+  grid-row: 2;
+  align-items: center;
+  text-align: center;
+}
+
+/* -----NOTICIAS-main----- */
+
+.cards{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  max-width: 1200px;
+  background-color: rgba(172, 119, 224, 0.384);
+}
+
+.card{
+  padding: 0.6rem;
+  border: 2px solid rgba(0, 0, 0, 0.733);
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.411);
+  
+
+}
+
+.card__info{
+  text-align: center;
+  
+}
+
+/* -----OFTALMOLOGIA-main----- */
+
+.list{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 3rem;
+
 }
 
 /* ---FOOTER--- */
 .footer {
+  margin-top: 1rem;
   background-color: rgba(201, 158, 250, 0.212);
   padding: 1rem;
 }
@@ -138,4 +202,44 @@
 /* -----Placeholder ref----- */
 .footer a {
   display: none;
+}
+
+
+/* -----RESPONSIVE----- */
+
+@media screen and (max-width:480px) {
+
+  .header__intro {
+    width: 100%;
+  }
+  
+  .header__logo {
+    height: 100px;
+  }
+
+  .banner__title{
+    padding: 0.5rem;
+    font-family: var(--font-titles);
+    font-size: var(--text-medium);
+  }
+  .banner__text {
+    width: 100%;
+    font-family: var(--font-main);
+    font-size: var(--text-small);
+  }
+
+  .banner__img {
+    margin: 1rem;
+    padding: 0rem;
+    max-width: 100%;
+  }
+
+  .card__text{
+    font-size:var(--text-xsmall);
+  }
+
+  .card__title{
+    font-size: var(--text-small);
+  }
+  
 }
