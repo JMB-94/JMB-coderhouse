@@ -13,9 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus+Slab&family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
   </head>
   <body>
     <header id="arriba" class="header">
@@ -28,94 +25,69 @@
         <h1 class="header__title">Oftalmología Fulanito</h1>
       </section>
       <!-- Nav replicado en views secundarias -->
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="header__navbar">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/noticias.html">Noticias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/oftalmologia.html">Oftalmología</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/ubicacion.html">Ubicación</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <nav class="header__navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../views/oftalmologia.html">Oftalmología</a></li>
+          <li><a href="../views/noticias.html">Noticias</a></li>
+          <li><a href="../views/contacto.html">Contacto</a></li>
+          <li><a href="../views/ubicacion.html">Ubicación</a></li>
+        </ul>
       </nav>
       <p class="header__ref">
         <a href="#abajo">Ir abajo</a>
       </p>
     </header>
-
-
     <main>
-      <section class="banner">
-        <div>
-          <h2 class="banner__title"> Mis últimas publicaciones</h2>
-        </div>
-        <picture class="banner__img">
-          <img src="../assets/cosme-fulanito.png" alt="cosme-fulanito" />
-        </picture>
-      </section>
-
-        <section id= "cards" class="cards">
+      
+      <section>
+      <h2>Nuestras publicaciones</h2>
+      <p>Placeholder cards, esta sección estará dedicada a las publicaciones académicas y noticias generales del profesional interviniente en su página. </p>
+      <section id= "cards" class="cards">
 
         <article class="card">
-          <picture class="card__img">
+          <picture>
             <img src="../assets/hipermetropia.jpg" alt="hipermetropia">
           </picture>
-          <div class="card__info">
-            <h3 class="card_title"> Hipermetropía</h3>
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi reprehenderit itaque ipsam recusandae tenetur, repellat distinctio, consequatur quo quisquam provident! Distinctio magni perferendis praesentium consequatur officia illo possimus voluptates.</p>
+          <div>
+            <h3> Hipermetropía</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi reprehenderit itaque ipsam recusandae tenetur, repellat distinctio, consequatur quo quisquam provident! Distinctio magni perferendis praesentium consequatur officia illo possimus voluptates.</p>
           </div>
         </article>
 
         <article class="card">
-          <picture class="card__img">
+          <picture>
             <img src="../assets/presbicia.jpg" alt="presbicia">
           </picture>
-          <div class="card__info">
-            <h3 class="card_title"> Presbicia</h3>
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi reprehenderit itaque ipsam recusandae tenetur, repellat distinctio, consequatur quo quisquam provident! Distinctio magni perferendis praesentium consequatur officia illo possimus voluptates.</p>
+          <div>
+            <h3> Presbicia</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi reprehenderit itaque ipsam recusandae tenetur, repellat distinctio, consequatur quo quisquam provident! Distinctio magni perferendis praesentium consequatur officia illo possimus voluptates.</p>
           </div>
         </article>
 
         <article class="card">
-          <picture class="card__img">
+          <picture>
             <img src="../assets/cataratas.jpg"alt="cataratas">
           </picture>
-          <div class="card__info">
-            <h3 class="card_title"> Cataratas</h3>
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi reprehenderit itaque ipsam recusandae tenetur, repellat distinctio, consequatur quo quisquam provident! Distinctio magni perferendis praesentium consequatur officia illo possimus voluptates.</p>
+          <div>
+            <h3> Cataratas</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi reprehenderit itaque ipsam recusandae tenetur, repellat distinctio, consequatur quo quisquam provident! Distinctio magni perferendis praesentium consequatur officia illo possimus voluptates.</p>
           </div>
         </article>
 
         <article class="card">
-          <picture class="card__img">
+          <picture>
             <img src="../assets/ojo-seco.jpg" alt="ojo-seco">
           </picture>
-          <div class="card__info">
-            <h3 class="card_title"> Ojo seco</h3>
-            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi reprehenderit itaque ipsam recusandae tenetur, repellat distinctio, consequatur quo quisquam provident! Distinctio magni perferendis praesentium consequatur officia illo possimus voluptates.</p>
+          <div>
+            <h3> Ojo seco</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis sequi reprehenderit itaque ipsam recusandae tenetur, repellat distinctio, consequatur quo quisquam provident! Distinctio magni perferendis praesentium consequatur officia illo possimus voluptates.</p>
           </div>
         </article>
       </section>      
-
+      
+      </section>
     </main>
-
-
     <footer id="abajo" class="footer">
       <p class="footer_ref">
         <a href="#arriba">Ir Arriba</a>

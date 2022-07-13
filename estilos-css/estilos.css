@@ -142,8 +142,8 @@ img {
   grid-template-rows: 2, 1fr;
 }
 
-.consultorio img{
-  grid-column: 1/4;
+.consultorio__img{
+  grid-column: 2/3;
   padding: 1rem;
 }
 
@@ -232,6 +232,11 @@ img {
     margin: 1rem;
     padding: 0rem;
     max-width: 100%;
+  }
+
+  .consultorio__img{
+    grid-column: 1/4;
+    padding: 1rem;
   }
 
   .card__text{
