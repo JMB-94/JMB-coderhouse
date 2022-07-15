@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  background-color:rgb(248, 249, 233, 0.5);
+}
+
 :root{
 /* Font-Family */
 --font-titles: 'Arbutus Slab';
@@ -16,6 +20,13 @@
 --text-small: 1em;
 --text-medium: 1.5em;
 --text-large: 2em;
+
+/* Colors */
+--color-darkblue: rgb(2, 74, 89);
+--color-teal: rgb(41,153,165);
+--color-beige: rgb(248, 249, 233);
+--color-red: rgb(242, 75, 39);
+--color-darkbrown: rgb(78, 68, 56);
 
 }
 
@@ -90,10 +101,13 @@ img {
   font-family: var(--font-titles);
   text-transform: uppercase capitalize;
   font-weight: 500;
-  background-color: rgba(146, 106, 168, 0.418);
-  border-color: rgba(124, 99, 148, 0.473);
-  color: rgb(30, 12, 78);
+  background-color: rgb(41,153,165,0.6);
+  border-color:  rgb(2,74,89);
+  color: rgb(19, 12, 78);
   clear: both;
+  border-radius: 10px;
+
+  
 }
 
 /* -----Placeholder ref----- */
@@ -156,31 +170,82 @@ img {
 
 /* -----NOTICIAS-main----- */
 
-.cards{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 1rem;
-  max-width: 1200px;
-  background-color: rgba(172, 119, 224, 0.384);
-}
-
-.card{
-  padding: 0.6rem;
-  border: 2px solid rgba(0, 0, 0, 0.733);
-  border-radius: 8px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.411);
-  
-
-}
+/* CARDS */
 
 .card__info{
   text-align: center;
   
 }
+
+.cards{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  max-width: 1200px;
+  background-color: rgb(41,153,165, 0.2);
+}
+
+.cards__title{
+  padding-left: 1em;
+}
+
+.card{
+  padding: 1rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgb(41,153,165, 0.2);
+  border-radius: 10px;
+
+}
+
+.card picture img{
+
+  max-height: 300px;
+
+}
+
+  /* CARDS ANIMATE */
+.card{
+  display:grid;
+  position:relative;
+  place-items: center;
+  overflow:hidden;
+
+}
+
+.card::before{
+  content:" ";
+  width: 350px;
+  height: 750px;
+  position: absolute;
+  background: linear-gradient(#00e5ff, #024a59);
+  animation: animate 100s linear infinite;
+  z-index: -2;
+
+}
+
+@keyframes animate{
+  0%{ transform:rotate(0deg); }
+  100%{ transform:rotate(360deg);}
+}
+
+.card::after{
+  content:" ";
+  position: absolute;
+  inset: 3px;
+  border-radius: 5px;
+  background-color: rgb(250, 255, 255);
+  z-index: -1;
+}
+
+.card__content{
+  z-index: 1000;
+}
+
+
 
 /* -----OFTALMOLOGIA-main----- */
 
