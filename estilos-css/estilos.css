@@ -218,8 +218,8 @@ img {
 
 .card::before{
   content:" ";
-  width: 350px;
-  height: 750px;
+  width: 22vh;
+  height: 72vh;
   position: absolute;
   background: linear-gradient(#00e5ff, #024a59);
   animation: animate 100s linear infinite;
