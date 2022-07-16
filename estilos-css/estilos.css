@@ -1,10 +1,46 @@
-*
-::before 
-::after
-{
+*::before,
+*::after,
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html{
+  background-color:#33b0be46;
+}
+
+:root{
+/* Font-Family */
+--font-titles: 'Arbutus Slab';
+--font-main: 'Abril Slab';
+
+/* Font Sizes */
+--text-xsmall: 0.8em;
+--text-small: 1em;
+--text-medium: 1.5em;
+--text-large: 2em;
+
+/* Colors */
+--color-darkblue: #024a59;
+--color-teal: #2997a3;
+--color-beige: rgb(248, 249, 233);
+--color-red: #f24b27;
+--color-darkbrown: rgb(78, 68, 56);
+
+}
+
+html, body {
+  font-family: var(--font-main);
+  height: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-titles);
+}
+
+img {
+  width:100%
 }
 
 /* ---HEADER--- */
@@ -15,11 +51,13 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin: 0.5rem;
+  
 }
 
 .header__intro {
   display: flex;
+
   width: 400px;
 }
 
@@ -31,10 +69,9 @@
 
 .header__title {
   align-self: center;
-  font-size: 2rem;
+  font-size: var(--text-large);
   font-variant: small-caps;
   font-style: normal;
-  font-family: 'Arbutus Slab';
   text-transform: uppercase capitalize;
   font-weight: 500;
   text-align: center;
@@ -55,20 +92,23 @@
 }
 
 .header__navbar a {
-  padding: 0.2rem;
+  padding: 0.2em;
   border: solid;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   text-decoration: none;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
   font-variant: small-caps;
   font-style: normal;
-  font-family: 'Arbutus Slab';
+  font-family: var(--font-titles);
   text-transform: uppercase capitalize;
   font-weight: 500;
-  background-color: rgba(146, 106, 168, 0.418);
-  border-color: rgba(124, 99, 148, 0.473);
-  color: rgb(30, 12, 78);
+  background-color: rgb(41,153,165,0.6);
+  border-color:  rgb(2,74,89);
+  color: rgb(19, 12, 78);
   clear: both;
+  border-radius: 10px;
+
+  
 }
 
 /* -----Placeholder ref----- */
@@ -76,30 +116,28 @@
   display: none;
 }
 
-/* -----MAIN----- */
+/* -----INDEX-main----- */
 /* ---Banner introductorio--- */
 
 .banner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  line-height: 1.6rem;
-  padding: 1rem 0rem 0rem 1rem;
+  line-height: 1.6em;
+  padding: 0rem 1rem;
   background-image: url('../assets/banner-light-purple.jpeg');
   background-color: rgb(192, 166, 216);
   background-size: cover;
 }
 
 .banner__title {
-  font-family: 'Arbutus Slab';
   color: rgb(91, 50, 204);
   margin-bottom: 0.7px;
   letter-spacing: 0.7px;
 }
 
 .banner__text {
-  font-family: 'Abril Slab';
   width: 500px;
   text-align: justify;
   letter-spacing: 0.4px;
@@ -111,29 +149,149 @@
   max-width: 100%;
 }
 
-/* -----Video----- */
+/* ---Banners secundarios--- */
 
-.video {
+.banner2 {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 2rem;
+  line-height: 1.6em;
+  padding: 0rem 1rem;
+  background: linear-gradient(140deg, rgb(158, 196, 201) 0%, rgb(117, 182, 196) 49%, rgb(191, 166, 212) 95%);
 }
 
-.video__text {
-  position: inherit;
-  width: 600px;
-  font-family: 'Abril Slab';
+.banner__title {
+  color: rgb(91, 50, 204);
+  margin-bottom: 0.7px;
+  letter-spacing: 0.7px;
+}
+
+.banner__text {
   width: 500px;
   text-align: justify;
   letter-spacing: 0.4px;
+}
+
+.banner__img {
+  margin: 5rem;
+  padding: 2rem 0rem 0rem 2rem;
+  max-width: 100%;
+}
+
+/* -----FOTO CONSULTORIO----- */
+
+.consultorio{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2, 1fr;
+}
+
+.consultorio__img{
+  grid-column: 2/3;
   padding: 1rem;
+}
+
+.consultorio__info{
+  grid-column: 1/4;
+  grid-row: 2;
+  align-items: center;
+  text-align: center;
+}
+
+/* -----NOTICIAS-main----- */
+
+/* CARDS */
+
+.card__info{
+  text-align: center;
+  
+}
+
+.cards{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  max-width: 1200px;
+  background-color: rgb(41,153,165, 0.2);
+}
+
+.cards__title{
+  padding-left: 1em;
+}
+
+.card{
+  padding: 1rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgb(41,153,165, 0.2);
+  border-radius: 10px;
+
+}
+
+.card picture img{
+
+  max-height: 300px;
+
+}
+
+  /* CARDS ANIMATE */
+  
+.card{
+  display:grid;
+  position:relative;
+  place-items: center;
+  overflow:hidden;
+
+}
+
+.card::before{
+  content:" ";
+  width: 12vh;
+  height: 82vh;
+  position: absolute;
+  background: linear-gradient(#f52727, #f3f03d);
+  animation: animate 100s linear infinite;
+  z-index: -2;
+
+}
+
+@keyframes animate{
+  0%{ transform:rotate(0deg); }
+  100%{ transform:rotate(360deg);}
+}
+
+.card::after{
+  content:" ";
+  position: absolute;
+  inset: 3px;
+  border-radius: 5px;
+  background-color: rgb(250, 255, 255);
+  z-index: -1;
+}
+
+.card__content{
+  z-index: 1000;
+}
+
+
+
+/* -----OFTALMOLOGIA-main----- */
+
+.list{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 3rem;
+
 }
 
 /* ---FOOTER--- */
 .footer {
+  margin-top: 1rem;
   background-color: rgba(201, 158, 250, 0.212);
   padding: 1rem;
 }
@@ -141,4 +299,55 @@
 /* -----Placeholder ref----- */
 .footer a {
   display: none;
+}
+
+
+/* -----RESPONSIVE----- */
+
+@media screen and (max-width:480px) {
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header__intro {
+    display: flex;
+    width: 100%;
+  }
+  
+  .header__logo {
+    height: 10vh;
+  }
+
+  .banner__title{
+    padding: 0.5rem;
+    font-family: var(--font-titles);
+    font-size: var(--text-medium);
+  }
+  .banner__text {
+    width: 100%;
+    font-family: var(--font-main);
+    font-size: var(--text-small);
+  }
+
+  .banner__img {
+    margin: 1rem;
+    padding: 0rem;
+    max-width: 100%;
+  }
+
+  .consultorio__img{
+    grid-column: 1/4;
+    padding: 1rem;
+  }
+
+  .card__text{
+    font-size:var(--text-xsmall);
+  }
+
+  .card__title{
+    font-size: var(--text-small);
+  }
+  
 }

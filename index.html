@@ -16,29 +16,31 @@
   </head>
 
   <body>
-    <header id="arriba" class="header">
-      <section class="header__intro">
-        <img
-          src="./assets/custom-logo.jpg"
-          alt="Dr. Cosme Fulanito"
-          class="header__logo"
-        />
-        <h1 class="header__title">Oftalmología Fulanito</h1>
-      </section>
-      <!-- Nav replicado en views secundarias -->
-      <nav class="header__navbar">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./views/oftalmologia.html">Oftalmología</a></li>
-          <li><a href="./views/noticias.html">Noticias</a></li>
-          <li><a href="./views/contacto.html">Contacto</a></li>
-          <li><a href="./views/ubicacion.html">Ubicación</a></li>
-        </ul>
-      </nav>
-      <p class="header__ref">
-        <a href="#abajo">Ir abajo</a>
-      </p>
-    </header>
+    <body>
+
+      <header id="arriba" class="header">
+        <section class="header__intro">
+          <img
+            src="../assets/custom-logo.jpg"
+            alt="Dr. Cosme Fulanito"
+            class="header__logo"
+          />
+          <h1 class="header__title">Oftalmología Fulanito</h1>
+        </section>
+        <!-- Nav replicado en views secundarias -->
+        <nav class="header__navbar">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./views/oftalmologia.html">Oftalmología</a></li>
+            <li><a href="./views/noticias.html">Noticias</a></li>
+            <li><a href="./views/contacto.html">Contacto</a></li>
+            <li><a href="./views/ubicacion.html">Ubicación</a></li>
+          </ul>
+        </nav>
+        <p class="header__ref">
+          <a href="#abajo">Ir abajo</a> 
+        </p>
+      </header>
 
     <main>
       <!-- Banner presentación -->
@@ -61,18 +63,14 @@
       </section>
 
       <!-- Video presentación -->
-
-      <section class="video">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/xnoummdS3DA"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <p class="video__text">
+      
+      <section class="consultorio">
+        <picture class="consultorio__img">
+        <img src="./assets/oftalmología.jpg" alt="foto-consultorio">
+      </picture>
+        <div class="consultorio__info">
+      <h2 class="consultorio__title">INFO SOBRE LA FOTO</h2>
+        <p class="consultorio__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
           maiores cumque eveniet inventore libero quasi, nesciunt similique,
           autem obcaecati quos modi aut repellendus, hic dolores provident
@@ -81,7 +79,8 @@
           perspiciatis deserunt dolor omnis exercitationem architecto alias
           minus ipsam temporibus atque illum magni id ad aliquid eveniet sequi.
         </p>
-      </section>
+        </div>
+    </section>
 
     </main>
      <!-- Footer replicado en vistas secundarias -->
