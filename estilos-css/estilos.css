@@ -1,6 +1,6 @@
 *::before,
-*::after,
-* {
+*::after, 
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -80,6 +80,8 @@ img {
 /* ---Navbar--- */
 
 .header__navbar ul {
+  display:flex;
+  flex-wrap: wrap;
   list-style-type: none;
   text-align: center;
   position: relative;
@@ -87,13 +89,11 @@ img {
 }
 
 .header__navbar li {
-  float: left;
   margin: 1rem;
 }
 
 .header__navbar a {
-  padding: 0.2em;
-  border: solid;
+  padding: 0.2rem;
   font-size: 1.2em;
   text-decoration: none;
   letter-spacing: 0.1em;
@@ -103,13 +103,40 @@ img {
   text-transform: uppercase capitalize;
   font-weight: 500;
   background-color: rgb(41,153,165,0.6);
-  border-color:  rgb(2,74,89);
   color: rgb(19, 12, 78);
   clear: both;
-  border-radius: 10px;
-
-  
 }
+
+/* HOVER NAVBAR */
+
+.header__navbar li::before{
+  content: " ";
+  display: absolute;
+  width: 0.3rem;
+  height: 0.3rem;
+
+}
+
+.header__navbar li::after{
+  content: " ";
+  display: block;
+  width: 1rem;
+  height: 0.3rem;
+  border-bottom: 0.3rem solid rgb(48, 48, 155);
+  border-radius: 0.3rem;
+
+}
+
+.header__navbar li:hover::after{
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 0.3rem;
+  border-bottom: 0.3rem solid darkblue;
+  transition: all 0.4s;
+
+}
+
 
 /* -----Placeholder ref----- */
 .header__ref {
@@ -132,7 +159,7 @@ img {
 }
 
 .banner__title {
-  color: rgb(91, 50, 204);
+  color: #1b65c5;
   margin-bottom: 0.7px;
   letter-spacing: 0.7px;
 }
@@ -158,25 +185,7 @@ img {
   justify-content: center;
   line-height: 1.6em;
   padding: 0rem 1rem;
-  background: linear-gradient(140deg, rgb(158, 196, 201) 0%, rgb(117, 182, 196) 49%, rgb(191, 166, 212) 95%);
-}
-
-.banner__title {
-  color: rgb(91, 50, 204);
-  margin-bottom: 0.7px;
-  letter-spacing: 0.7px;
-}
-
-.banner__text {
-  width: 500px;
-  text-align: justify;
-  letter-spacing: 0.4px;
-}
-
-.banner__img {
-  margin: 5rem;
-  padding: 2rem 0rem 0rem 2rem;
-  max-width: 100%;
+  background: linear-gradient(140deg, rgb(158, 196, 201) 0%, rgb(124, 183, 212) 25%, rgb(117, 182, 196) 39%, rgb(191, 166, 212) 95%);
 }
 
 /* -----FOTO CONSULTORIO----- */
