@@ -19,33 +19,49 @@
 
   <body>
     <body>
-      <header id="arriba" class="header">
-        <section class="header__intro">
-          <img
-            src="../assets/custom-logo.jpg"
-            alt="Dr. Cosme Fulanito"
-            class="header__logo"
-          />
-          <h1 class="header__title">Oftalmología Fulanito</h1>
-        </section>
-        <!-- Nav replicado en views secundarias -->
-        <div class="container row mt-4">
-        <nav class="header__navbar">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./views/oftalmologia.html">Oftalmología</a></li>
-            <li><a href="./views/noticias.html">Noticias</a></li>
-            <li><a href="./views/contacto.html">Contacto</a></li>
-            <li><a href="./views/ubicacion.html">Ubicación</a></li>
-          </ul>
+      <header>
+
+        <nav class="navbar navbar-expand-lg px-4 py-2">
+          <section class="header__intro">
+            <img
+              src="../assets/custom-logo.jpg"
+              alt="Dr. Cosme Fulanito"
+              class="header__logo"
+            />
+            <h1 class="header__title px-1">Oftalmología Fulanito</h1>
+          </section>
+          
+          <div class="text-center m-4">
+            <button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link mx-4" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="./views/oftalmologia.html">Oftalmología</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="./views/noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="./views/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="./views/ubicacion.html">Ubicación</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-      </div>
-        <p class="header__ref">
-          <a href="#abajo">Ir abajo</a> 
-        </p>
+      
+
+
       </header>
 
-    <main>
+      <main id="main">
       <!-- Banner presentación -->
       <section class="banner">
         <div>
@@ -87,15 +103,26 @@
 
     </main>
      <!-- Footer replicado en vistas secundarias -->
-    <footer id="abajo" class="footer">
+     <footer id="abajo" class="footer">
       <p class="footer_ref">
-        <a href="#arriba">Ir Arriba</a>
+        <a class="placeholder" href="#arriba">Ir Arriba</a>
       </p>
-      <p>
+      <div class="text-center">
+        <h3 class="mt-2">¡Visite nuestras redes!</h3>
+
+        <ul class="my-4 list-unstyled d-inline-block">
+          <li class="icon__redes list-inline-item"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a></li>
+          <li class="icon__redes list-inline-item"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+          <li class="icon__redes list-inline-item"><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+
+      </div>
+      <p class="text-center">
         Copyright 2022 Cosme Fulanito | Médico oftalmólogo. Todos los derechos
         registrados. Diseño Web por Juan Manuel Blazquez.
       </p>
     </footer>
+    <script src="https://kit.fontawesome.com/06c0834a0e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
