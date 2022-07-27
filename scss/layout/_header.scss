@@ -43,14 +43,16 @@
     background-color: rgba(160, 208, 247, 0.603);
     display:flex;
     justify-content: center;
-  }
+      /* NAVBAR ICON */
   
-  .nav-item{
-    font-size: 1.3em;
-  }
-  
-  /* NAVBAR ICON */
-  
-  .navbar-toggler{
+    .navbar-toggler{
     border: solid black;
+    }
+
+    .nav-item{
+      font-size: 1.3em;
+    }
+    
   }
+  
+
