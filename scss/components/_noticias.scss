@@ -1,0 +1,76 @@
+/* -----NOTICIAS-main----- */
+
+/* CARDS */
+
+.card__info{
+    text-align: center;
+    
+  }
+  
+  .cards{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    max-width: 1200px;
+  }
+  
+  .cards__title{
+    padding-left: 1em;
+  }
+  
+  .card{
+    padding: 1rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    background-color: rgba(41, 153, 165, 0.24);
+    border-radius: 10px;
+  
+  }
+  
+  .card picture img{
+  
+    max-height: 300px;
+  
+  }
+  
+    /* CARDS ANIMATE */
+    
+  .card{
+    display:grid;
+    position:relative;
+    place-items: center;
+    overflow:hidden;
+  
+  }
+  
+  .card::before{
+    content:" ";
+    width: 12vh;
+    height: 82vh;
+    position: absolute;
+    background: linear-gradient(#c527f5, #3df3ea);
+    animation: animate 100s linear infinite;
+    z-index: -2;
+  
+  }
+  
+  @keyframes animate{
+    0%{ transform:rotate(0deg); }
+    100%{ transform:rotate(360deg);}
+  }
+  
+  .card::after{
+    content:" ";
+    position: absolute;
+    inset: 3px;
+    border-radius: 5px;
+    background-color: rgb(250, 255, 255);
+    z-index: -1;
+  }
+  
+  .card__content{
+    z-index: 1000;
+  }

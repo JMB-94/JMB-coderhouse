@@ -1,0 +1,26 @@
+{
+  "name": "oftalmologia-blazquez",
+  "version": "1.0.0",
+  "description": "<h1> # JMB-coderhouse comisión 31725 </h1>\r <p> This is a personal project to complete and assignment for an online web developement course at CODERHOUSE available for my tutors to check my code. </p>\r <ul>\r <li>HTML5</li>\r <li>CSS3 </li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMB-94/JMB-coderhouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMB-94/JMB-coderhouse/issues"
+  },
+  "homepage": "https://github.com/JMB-94/JMB-coderhouse#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

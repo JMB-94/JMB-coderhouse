@@ -1,0 +1,36 @@
+
+    /* VARIABLES */
+    
+    /* Font-Family */
+    $font-titles: 'Arbutus Slab';
+    $font-main: 'Abril Slab';
+    
+    /* Font Sizes */
+    $text-xsmall: 0.8em;
+    $text-small: 1em;
+    $text-medium: 1.5em;
+    $text-large: 2em;
+    
+    /* Colors */
+    $color-darkblue: #024a59;
+    $color-teal: #2997a3;
+    $-beige: rgb(248, 249, 233);
+    $color-red: #f24b27;
+    $color-darkbrown: rgb(78, 68, 56);
+
+    html, body {
+        font-family: $font-main;
+        height: 100%;
+      }
+      
+      h1, h2, h3, h4 {
+        font-family: $font-titles;
+      }
+      
+      img {
+        width:100%
+      }
+
+      #main{
+        background-color: rgba(160, 208, 247, 0.603);
+      }
