@@ -6,34 +6,22 @@
   padding: 0;
   box-sizing: border-box !important; }
 
-#main {
-  background-color: rgba(160, 208, 247, 0.603); }
-
-:root {
-  /* Font-Family */
-  --font-titles: 'Arbutus Slab';
-  --font-main: 'Abril Slab';
-  /* Font Sizes */
-  --text-xsmall: 0.8em;
-  --text-small: 1em;
-  --text-medium: 1.5em;
-  --text-large: 2em;
-  /* Colors */
-  --color-darkblue: #024a59;
-  --color-teal: #2997a3;
-  --color-beige: rgb(248, 249, 233);
-  --color-red: #f24b27;
-  --color-darkbrown: rgb(78, 68, 56); }
-
+/* VARIABLES */
+/* Font-Family */
+/* Font Sizes */
+/* Colors */
 html, body {
-  font-family: var(--font-main);
+  font-family: "Abril Slab";
   height: 100%; }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-titles); }
+  font-family: "Arbutus Slab"; }
 
 img {
   width: 100%; }
+
+#main {
+  background-color: rgba(160, 208, 247, 0.603); }
 
 /* ---HEADER--- */
 /* -----Logo + title----- */
@@ -42,25 +30,23 @@ img {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0.5rem;
-  background-color: #33b0be46; }
-
-.header__intro {
-  display: flex; }
-
-.header__logo {
-  height: 8vh;
-  width: auto;
-  padding: 0rem; }
-
-.header__title {
-  align-self: center;
-  font-size: var(--text-medium);
-  font-variant: small-caps;
-  font-style: normal;
-  text-transform: uppercase capitalize;
-  font-weight: 500;
-  text-align: center; }
+  padding: 0.5rem; }
+  .header__intro {
+    display: flex; }
+  .header__title {
+    align-self: center;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    font-style: normal;
+    text-transform: uppercase capitalize;
+    font-weight: 500;
+    text-align: center; }
+  .header__logo {
+    height: 8vh;
+    width: auto;
+    padding: 0rem; }
+  .header__ref {
+    display: none; }
 
 /* ---Navbar--- */
 .navbar {
@@ -75,10 +61,6 @@ img {
 .navbar-toggler {
   border: solid black; }
 
-/* -----Placeholder ref----- */
-.header__ref {
-  display: none; }
-
 /* -----INDEX-main----- */
 /* ---Banner introductorio--- */
 .banner {
@@ -91,25 +73,51 @@ img {
   background-image: url("../assets/banner-light-purple.jpeg");
   background-color: #c0a6d8;
   background-size: cover; }
+  .banner__title {
+    color: #1b65c5;
+    margin-bottom: 0.2em;
+    font-weight: 600;
+    font-family: "Arbutus Slab"; }
+  .banner__text {
+    width: 500px;
+    font-family: "Abril Slab";
+    font-size: 1.2em;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    line-height: 1.6em; }
+  .banner__img {
+    margin: 5rem;
+    padding: 2rem 0rem 0rem 2rem;
+    max-width: 100%; }
 
-.banner__title {
-  color: #1b65c5;
-  margin-bottom: 0.2em;
-  font-weight: 600;
-  font-family: var(--font-titles); }
-
-.banner__text {
-  width: 500px;
-  font-family: var(--font-main);
-  font-size: 1.2em;
-  text-align: justify;
-  letter-spacing: 0.05em;
-  line-height: 1.6em; }
-
-.banner__img {
-  margin: 5rem;
-  padding: 2rem 0rem 0rem 2rem;
-  max-width: 100%; }
+/* -----FOTO CONSULTORIO----- */
+.consultorio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2, 1fr; }
+  .consultorio__img {
+    grid-column: 2/3;
+    padding: 1rem; }
+  .consultorio__title {
+    font-size: 1.5em;
+    text-transform: uppercase; }
+  .consultorio__info {
+    grid-column: 2/3;
+    grid-row: 2;
+    align-items: center;
+    text-align: center;
+    font-family: "Abril Slab";
+    font-size: 1.2em;
+    text-align: justify;
+    letter-spacing: 0.05em; }
+  .consultorio__text {
+    color: #071a68; }
+  .consultorio__textlink {
+    text-decoration: none;
+    font-style: italic;
+    color: #4d3bf1;
+    font-weight: 600;
+    border-bottom: 0.1em dotted #4d3bf1; }
 
 /* ---Banners secundarios--- */
 .banner2 {
@@ -121,45 +129,25 @@ img {
   padding: 0rem 1rem;
   background: linear-gradient(140deg, #9ec4c9 0%, #7cb7d4 25%, #75b6c4 39%, #bfa6d4 95%); }
 
-/* -----FOTO CONSULTORIO----- */
-.consultorio {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2, 1fr; }
+/* -----OFTALMOLOGIA-main----- */
+/* CAROUSEL */
+.carousel-item img {
+  height: 80vh; }
 
-.consultorio__img {
-  grid-column: 2/3;
-  padding: 1rem; }
+.bottom__text {
+  font-family: "Abril Slab";
+  font-size: 1.5em;
+  margin-bottom: 0; }
 
-.consultorio__title {
-  font-size: var(--text-medium);
-  text-transform: uppercase; }
+/* ACCORDION */
+.accordion-body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-.consultorio__info {
-  grid-column: 2/3;
-  grid-row: 2;
-  align-items: center;
-  text-align: center;
-  font-family: var(--font-main);
-  font-size: 1.2em;
-  text-align: justify;
-  letter-spacing: 0.05em; }
-
-.consultorio__text {
-  color: #071a68; }
-
-.consultorio__textlink {
-  text-decoration: none;
-  font-style: italic;
-  color: #4d3bf1;
-  font-weight: 600;
-  border-bottom: 0.1em dotted #4d3bf1; }
+.accordion-item {
+  background-color: rgba(207, 166, 240, 0.295); }
 
 /* -----NOTICIAS-main----- */
 /* CARDS */
-.card__info {
-  text-align: center; }
-
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -171,7 +159,7 @@ img {
   max-width: 1200px; }
 
 .cards__title {
-  padding-left: 1em; }
+  padding-top: 0.5em; }
 
 .card {
   padding: 1rem;
@@ -215,30 +203,27 @@ img {
 .card__content {
   z-index: 1000; }
 
-/* -----OFTALMOLOGIA-main----- */
-/* CAROUSEL */
-.carousel-item img {
-  height: 75vh;
-  background-position: center;
-  background-repeat: no-repeat; }
-
-.bottom__text {
-  font-family: var(--font-main);
-  font-size: 1.5em;
-  margin-bottom: 0; }
-
-/* ACCORDION */
-.accordion-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-.accordion-item {
-  background-color: rgba(207, 166, 240, 0.295); }
-
 /* CONTACTO Main */
 .btn_color {
   background-color: #9535d4;
   color: azure;
   border: solid #276ff5 0.1rem; }
+
+/* FORM */
+.form {
+  font-family: "Arbutus Slab"; }
+
+/* UBICACIÓN Main */
+.divider p {
+  font-size: 1.5em; }
+
+.divider h2 {
+  border-top: 3px solid darkcyan; }
+  .divider h2 a {
+    color: black; }
+
+.map {
+  --bs-aspect-ratio: 25%; }
 
 /* ---FOOTER--- */
 .footer {
@@ -252,25 +237,8 @@ img {
 .svg-inline--fa {
   font-size: 2.5em; }
 
-/* FORM */
-.form {
-  font-family: var(--font-titles); }
-
-/* UBICACIÓN Main */
-.divider h2 {
-  border-top: 3px solid darkcyan; }
-
-.divider h2 a {
-  color: black; }
-
-.divider p {
-  font-size: 1.5em; }
-
-.map {
-  --bs-aspect-ratio: 25%; }
-
 /* -----RESPONSIVE----- */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
   /* HOVER NAVBAR */
   .navbar li::before {
     content: " ";
@@ -292,6 +260,11 @@ img {
     border-bottom: 0.3rem solid darkblue;
     transition: all 0.4s; } }
 
+@media screen and (max-width: 992px) {
+  .carousel-item img {
+    height: auto;
+    width: auto; } }
+
 @media screen and (max-width: 480px) {
   .cards {
     display: flex;
@@ -303,12 +276,12 @@ img {
     height: 10vh; }
   .banner__title {
     padding: 0.5rem;
-    font-family: var(--font-titles);
-    font-size: var(--text-medium); }
+    font-family: "Arbutus Slab";
+    font-size: 1.5em; }
   .banner__text {
     width: 100%;
-    font-family: var(--font-main);
-    font-size: var(--text-small); }
+    font-family: "Abril Slab";
+    font-size: 1em; }
   .banner__img {
     margin: 1rem;
     padding: 0rem;
@@ -317,8 +290,8 @@ img {
     grid-column: 1/4;
     padding: 1rem; }
   .card__text {
-    font-size: var(--text-xsmall); }
+    font-size: 0.8em; }
   .card__title {
-    font-size: var(--text-small); }
+    font-size: 1em; }
   .map {
     --bs-aspect-ratio: 80%; } }

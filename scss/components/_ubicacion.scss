@@ -1,17 +1,19 @@
 /* UBICACIÓN Main */
 
-.divider h2{
-    border-top: 3px solid darkcyan;
-  
-  }
-  
-  .divider h2 a{
-    color:black;
-  
-  }
-  .divider p {
+.divider {
+  p {
     font-size: 1.5em;
   }
+
+  h2{
+    border-top: 3px solid darkcyan;
+
+    a{
+      color:black;
+        }
+  
+  }
+}
   
   .map{
   --bs-aspect-ratio: 25%;

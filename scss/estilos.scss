@@ -1,12 +1,12 @@
-@import "./utilities/variables";
-
 @import "./base/reset";
 
-@import "./components/header";
+@import "./utilities/variables";
+
+@import "./layout/header";
 
 @import "./components/index";
 
-@import "./components/banners";
+@import "./layout/banners";
 
 @import "./components/oftalmologia";
 
@@ -16,7 +16,7 @@
 
 @import "./components/ubicacion";
 
-@import "./components/footer";
+@import "./layout/footer";
 
-@import "./components/responsive"
+@import "./layout/responsive";
 

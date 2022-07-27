@@ -1,11 +1,6 @@
 /* -----NOTICIAS-main----- */
 
 /* CARDS */
-
-.card__info{
-    text-align: center;
-    
-  }
   
   .cards{
     display:grid;
@@ -19,7 +14,7 @@
   }
   
   .cards__title{
-    padding-left: 1em;
+    padding-top: 0.5em;
   }
   
   .card{

@@ -1,6 +1,6 @@
 /* -----RESPONSIVE----- */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
     /* HOVER NAVBAR */
   
   .navbar li::before{
@@ -31,6 +31,15 @@
   
   }
   }
+
+  @media screen and (max-width: 992px) {
+
+    .carousel-item img{
+      height: auto;
+      width: auto;
+    }
+  
+  }
   
   @media screen and (max-width:480px) {
   
@@ -50,13 +59,13 @@
   
     .banner__title{
       padding: 0.5rem;
-      font-family: var(--font-titles);
-      font-size: var(--text-medium);
+      font-family: $font-titles;
+      font-size: $text-medium;
     }
     .banner__text {
       width: 100%;
-      font-family: var(--font-main);
-      font-size: var(--text-small);
+      font-family: $font-main;
+      font-size: $text-small;
     }
   
     .banner__img {
@@ -71,14 +80,15 @@
     }
   
     .card__text{
-      font-size:var(--text-xsmall);
+      font-size: $text-xsmall;
     }
   
     .card__title{
-      font-size: var(--text-small);
+      font-size: $text-small;
     }
     
     .map{
       --bs-aspect-ratio: 80%;
       }
   }
+

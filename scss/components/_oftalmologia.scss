@@ -2,14 +2,16 @@
 
 /* CAROUSEL */
 
-.carousel-item img{
-    height: 75vh;
-    background-position: center;
-    background-repeat: no-repeat;
+.carousel-item {
+
+  img{
+    height: 80vh;
   }
+
+}
   
   .bottom__text{
-    font-family: var(--font-main);
+    font-family: $font-main;
     font-size: 1.5em;
     margin-bottom: 0;
   }
@@ -24,4 +26,3 @@
   .accordion-item{
     background-color: rgba(207, 166, 240, 0.295);
   }
-  
