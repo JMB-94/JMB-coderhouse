@@ -23,6 +23,15 @@ img {
 #main {
   background-color: rgba(160, 208, 247, 0.603); }
 
+.art__title--purple {
+  color: purple; }
+
+.art__title--pink {
+  color: pink; }
+
+.art__title--pinkblue {
+  color: #ad7aec; }
+
 /* ---HEADER--- */
 /* -----Logo + title----- */
 .header {
@@ -75,7 +84,8 @@ img {
     color: #1b65c5;
     margin-bottom: 0.2em;
     font-weight: 600;
-    font-family: "Arbutus Slab"; }
+    font-family: "Arbutus Slab";
+    font-size: 2em; }
   .banner__text {
     width: 500px;
     font-family: "Abril Slab";
@@ -156,8 +166,9 @@ img {
   margin-top: 1rem;
   max-width: 1200px; }
 
-.cards__title {
-  padding-top: 0.5em; }
+.cards__title, .cards__title--destacada {
+  padding: 0.5em;
+  margin: 1rem; }
 
 .card {
   padding: 1rem;
@@ -167,6 +178,10 @@ img {
 
 .card picture img {
   max-height: 300px; }
+
+.cards__title--destacada {
+  color: #5b138f;
+  text-transform: uppercase; }
 
 /* CARDS ANIMATE */
 .card {

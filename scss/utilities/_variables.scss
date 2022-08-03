@@ -17,6 +17,12 @@
     $color-red: #f24b27;
     $color-darkbrown: rgb(78, 68, 56);
 
+    $art-title:(
+      'purple': purple,
+      'pink': pink,
+      'pinkblue': rgb(173, 122, 236),
+    );
+
     html, body {
         font-family: $font-main;
         height: 100%;

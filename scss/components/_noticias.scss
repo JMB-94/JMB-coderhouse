@@ -14,7 +14,8 @@
   }
   
   .cards__title{
-    padding-top: 0.5em;
+    padding: 0.5em;
+    margin: 1rem;
   }
   
   .card{
@@ -29,6 +30,12 @@
   
     max-height: 300px;
   
+  }
+
+  .cards__title--destacada{
+    @extend.cards__title;
+    color: rgb(91, 19, 143);
+    text-transform: uppercase;
   }
   
     /* CARDS ANIMATE */
