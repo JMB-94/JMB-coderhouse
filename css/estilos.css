@@ -10,11 +10,15 @@
 /* Font-Family */
 /* Font Sizes */
 /* Colors */
-html, body {
+html,
+body {
   font-family: "Abril Slab";
   height: 100%; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Arbutus Slab"; }
 
 img {
@@ -23,6 +27,7 @@ img {
 #main {
   background-color: rgba(160, 208, 247, 0.603); }
 
+/* FUNCTIONS p/ OPTIMIZAR CÓDIGO */
 .art__title--purple {
   color: purple; }
 
