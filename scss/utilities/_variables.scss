@@ -1,41 +1,45 @@
-    /* VARIABLES */
-    
-    /* Font-Family */
-    $font-titles: 'Arbutus Slab';
-    $font-main: 'Abril Slab';
-    
-    /* Font Sizes */
-    $text-xsmall: 0.8em;
-    $text-small: 1em;
-    $text-medium: 1.5em;
-    $text-large: 2em;
-    
-    /* Colors */
-    $color-darkblue: #024a59;
-    $color-teal: #2997a3;
-    $color-beige: rgb(248, 249, 233);
-    $color-red: #f24b27;
-    $color-darkbrown: rgb(78, 68, 56);
+/* VARIABLES */
 
-    $art-title:(
-      'purple': purple,
-      'pink': pink,
-      'pinkblue': rgb(173, 122, 236),
-    );
+/* Font-Family */
+$font-titles: 'Arbutus Slab';
+$font-main: 'Abril Slab';
 
-    html, body {
-        font-family: $font-main;
-        height: 100%;
-      }
-      
-      h1, h2, h3, h4 {
-        font-family: $font-titles;
-      }
-      
-      img {
-        width:100%
-      }
+/* Font Sizes */
+$text-xsmall: 0.8em;
+$text-small: 1em;
+$text-medium: 1.5em;
+$text-large: 2em;
 
-      #main{
-        background-color: rgba(160, 208, 247, 0.603);
-      }
+/* Colors */
+$color-darkblue: #024a59;
+$color-teal: #2997a3;
+$color-beige: rgb(248, 249, 233);
+$color-red: #f24b27;
+$color-darkbrown: rgb(78, 68, 56);
+
+$art-title: (
+  'purple': purple,
+  'pink': pink,
+  'pinkblue': rgb(173, 122, 236),
+);
+
+html,
+body {
+  font-family: $font-main;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-titles;
+}
+
+img {
+  width: 100%;
+}
+
+#main {
+  background-color: rgba(160, 208, 247, 0.603);
+}

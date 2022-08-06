@@ -1,11 +1,12 @@
+/* FUNCTIONS p/ OPTIMIZAR CÓDIGO */
 @each $name, $color in $art-title {
-    .art__title--#{$name}{
-        color: #{$color};
-    }
+  .art__title--#{$name} {
+    color: #{$color};
+  }
 }
 
-@mixin flexbox ($flex-wrap, $align-items, $justify-items) {
-    flex-wrap: $flex-wrap;
-    align-items: $align-items;
-    justify-content: $justify-items;
+@mixin flexbox($flex-wrap, $align-items, $justify-items) {
+  flex-wrap: $flex-wrap;
+  align-items: $align-items;
+  justify-content: $justify-items;
 }

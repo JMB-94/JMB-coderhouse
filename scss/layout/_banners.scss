@@ -1,11 +1,17 @@
 /* ---Banners secundarios--- */
 
 .banner2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.6em;
-    padding: 0rem 1rem;
-    background: linear-gradient(140deg, rgb(158, 196, 201) 0%, rgb(124, 183, 212) 25%, rgb(117, 182, 196) 39%, rgb(191, 166, 212) 95%);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6em;
+  padding: 0rem 1rem;
+  background: linear-gradient(
+    140deg,
+    rgb(158, 196, 201) 0%,
+    rgb(124, 183, 212) 25%,
+    rgb(117, 182, 196) 39%,
+    rgb(191, 166, 212) 95%
+  );
+}

@@ -2,85 +2,75 @@
 /* ---Banner introductorio--- */
 
 .banner {
-    display: flex;
-    @include flexbox(wrap, center, center);
+  display: flex;
+  @include flexbox(wrap, center, center);
+  line-height: 1.6em;
+  padding: 0rem 1rem;
+  background-image: url('../assets/banner-light-purple.jpeg');
+  background-color: rgb(192, 166, 216);
+  background-size: cover;
+
+  &__title {
+    color: #1b65c5;
+    margin-bottom: 0.2em;
+    font-weight: 600;
+    font-family: $font-titles;
+    font-size: $text-large;
+  }
+
+  &__text {
+    width: 500px;
+    font-family: $font-main;
+    font-size: 1.2em;
+    text-align: justify;
+    letter-spacing: 0.05em;
     line-height: 1.6em;
-    padding: 0rem 1rem;
-    background-image: url('../assets/banner-light-purple.jpeg');
-    background-color: rgb(192, 166, 216);
-    background-size: cover;
-
-    &__title {
-      color: #1b65c5;
-      margin-bottom: 0.2em;
-      font-weight: 600;
-      font-family: $font-titles;
-      font-size: $text-large;
-    }
-
-    &__text {
-      width: 500px;
-      font-family: $font-main;
-      font-size: 1.2em;
-      text-align: justify;
-      letter-spacing: 0.05em;
-      line-height: 1.6em;
-    }
-
-    &__img {
-      margin: 5rem;
-      padding: 2rem 0rem 0rem 2rem;
-      max-width: 100%;
-    }
-  
   }
-  
-  /* -----FOTO CONSULTORIO----- */
 
-.consultorio{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2, 1fr;
-
-    &__img{
-      grid-column: 2/3;
-      padding: 1rem;
-    }
-
-    &__title{
-      font-size: $text-medium;
-      text-transform: uppercase;
-    }
-
-    &__info{
-      grid-column: 2/3;
-      grid-row: 2;
-      align-items: center;
-      text-align: center;
-      font-family: $font-main;
-      font-size: 1.2em;
-      text-align: justify;
-      letter-spacing: 0.05em;
-    }
-
-    &__text{
-      color:rgb(7, 26, 104);
-    }
-
-    &__textlink{
-      text-decoration: none;
-      font-style: italic;
-      color: #4d3bf1;
-      font-weight: 600;
-      border-bottom: 0.1em dotted #4d3bf1;
-    }
-  
+  &__img {
+    margin: 5rem;
+    padding: 2rem 0rem 0rem 2rem;
+    max-width: 100%;
   }
-  
+}
 
-  
+/* -----FOTO CONSULTORIO----- */
 
+.consultorio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2, 1fr;
 
-  
+  &__img {
+    grid-column: 2/3;
+    padding: 1rem;
+  }
 
-  
+  &__title {
+    font-size: $text-medium;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    grid-column: 2/3;
+    grid-row: 2;
+    align-items: center;
+    text-align: center;
+    font-family: $font-main;
+    font-size: 1.2em;
+    text-align: justify;
+    letter-spacing: 0.05em;
+  }
+
+  &__text {
+    color: rgb(7, 26, 104);
+  }
+
+  &__textlink {
+    text-decoration: none;
+    font-style: italic;
+    color: #4d3bf1;
+    font-weight: 600;
+    border-bottom: 0.1em dotted #4d3bf1;
+  }
+}

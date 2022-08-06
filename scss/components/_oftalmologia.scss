@@ -2,40 +2,28 @@
 
 /* CAROUSEL */
 
-.carousel{
-
+.carousel {
   &-item {
-
-   & img{
+    & img {
       height: 80vh;
     }
-  
   }
-
-
 }
 
-  
-  .bottom__text{
-    font-family: $font-main;
-    font-size: 1.5em;
-    margin: 0;
-  }
-  
-  /* ACCORDION */
-  
-  .accordion{
+.bottom__text {
+  font-family: $font-main;
+  font-size: 1.5em;
+  margin: 0;
+}
 
-    &-body{
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
-    }
+/* ACCORDION */
 
-    &-item{
-      background-color: rgba(207, 166, 240, 0.295);
-    }
-
+.accordion {
+  &-body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
-  
-
+  &-item {
+    background-color: rgba(207, 166, 240, 0.295);
+  }
+}
