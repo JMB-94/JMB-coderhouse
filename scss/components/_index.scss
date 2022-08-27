@@ -6,7 +6,7 @@
   @include flexbox(wrap, center, center);
   line-height: 1.6em;
   padding: 0rem 1rem;
-  background-image: url('../assets/banner-light-purple.jpeg');
+  background-image: url('../../assets/banner-lightblue.webp');
   background-color: rgb(192, 166, 216);
   background-size: cover;
 
@@ -21,7 +21,7 @@
   &__text {
     width: 500px;
     font-family: $font-main;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: justify;
     letter-spacing: 0.05em;
     line-height: 1.6em;

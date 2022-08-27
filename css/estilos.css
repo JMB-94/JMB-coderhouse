@@ -82,7 +82,7 @@ img {
   justify-content: center;
   line-height: 1.6em;
   padding: 0rem 1rem;
-  background-image: url("../assets/banner-light-purple.jpeg");
+  background-image: url("../../assets/banner-lightblue.webp");
   background-color: #c0a6d8;
   background-size: cover; }
   .banner__title {
@@ -94,7 +94,7 @@ img {
   .banner__text {
     width: 500px;
     font-family: "Abril Slab";
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: justify;
     letter-spacing: 0.05em;
     line-height: 1.6em; }
@@ -140,7 +140,7 @@ img {
   justify-content: center;
   line-height: 1.6em;
   padding: 0rem 1rem;
-  background: linear-gradient(140deg, #9ec4c9 0%, #7cb7d4 25%, #75b6c4 39%, #bfa6d4 95%); }
+  background: linear-gradient(140deg, #b89ec9 0%, #cde5f1 25%, #86daf7 85%); }
 
 /* -----OFTALMOLOGIA-main----- */
 /* CAROUSEL */
@@ -154,10 +154,14 @@ img {
 
 /* ACCORDION */
 .accordion-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  font-family: "Abril Slab";
+  font-size: 1.2em; }
 
 .accordion-item {
   background-color: rgba(207, 166, 240, 0.295); }
+
+.accordion-button {
+  color: #024a59; }
 
 /* -----NOTICIAS-main----- */
 /* CARDS */
@@ -241,7 +245,7 @@ img {
 
 /* ---FOOTER--- */
 .footer {
-  background-color: rgba(201, 158, 250, 0.212);
+  background-color: rgba(211, 175, 251, 0.212);
   padding: 1rem;
   /* ICONOS REDES SOCIALES */ }
   .footer .placeholder {
@@ -310,7 +314,7 @@ img {
   .banner__text {
     width: 100%;
     font-family: "Abril Slab";
-    font-size: 1em; }
+    font-size: 1.2em; }
   .banner__img {
     margin: 1rem;
     padding: 0rem;
@@ -321,6 +325,6 @@ img {
   .card__text {
     font-size: 0.8em; }
   .card__title, .card__title--destacada {
-    font-size: 1em; }
+    font-size: 1.2em; }
   .map {
     --bs-aspect-ratio: 80%; } }
